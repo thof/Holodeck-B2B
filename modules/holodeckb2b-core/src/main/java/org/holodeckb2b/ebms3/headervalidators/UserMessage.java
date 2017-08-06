@@ -64,8 +64,6 @@ public class UserMessage {
        else {
            if (Utils.isNullOrEmpty(collabInfo.getAction()))
                errDetails.append("Action is missing\n");
-           if (Utils.isNullOrEmpty(collabInfo.getConversationId()))
-               errDetails.append("ConversationId is missing\n");
            if (collabInfo.getService() == null || Utils.isNullOrEmpty(collabInfo.getService().getName()))
                errDetails.append("Service information is missing\n");
        }
